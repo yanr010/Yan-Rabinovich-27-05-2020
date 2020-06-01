@@ -14,7 +14,7 @@ import {throwError} from 'rxjs';
 
 export class WeatherService {
 
-  private apiKey = 'XJq6aXAnbAtAqSEqOiCwEiEPYslLzTEk';
+  private apiKey = 'WsAnPYv688NN4HPPxoXJfiSoOTXXrJBw';
   private autocompleteAPI = 'https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=' + this.apiKey + '&q=';
   private currentConditionAPI = 'https://dataservice.accuweather.com/currentconditions/v1/';
   private fiveDaysAPI = 'https://dataservice.accuweather.com/forecasts/v1/daily/5day/';
@@ -57,6 +57,8 @@ export class WeatherService {
 
     if (error.error instanceof ErrorEvent) {
       errorMessage = `Error: ${error.error.message}`;
+    } else if(error.status === 0){
+      errorMessage = 'AccuWeather api key expired';
     } else {
       errorMessage = error.message;
     }
