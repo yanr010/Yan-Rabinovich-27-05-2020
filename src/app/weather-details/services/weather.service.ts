@@ -14,11 +14,11 @@ import {throwError} from 'rxjs';
 
 export class WeatherService {
 
-  private apiKey = 'GXMVZ5TYhBArHxmKX1RGJqhQGOqD4gl5';
-  private autocompleteAPI = 'http://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=' + this.apiKey + '&q=';
-  private currentConditionAPI = 'http://dataservice.accuweather.com/currentconditions/v1/';
-  private fiveDaysAPI = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/';
-  private geolocationAPI = 'http://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=';
+  private apiKey = 'XJq6aXAnbAtAqSEqOiCwEiEPYslLzTEk';
+  private autocompleteAPI = 'https://dataservice.accuweather.com/locations/v1/cities/autocomplete?apikey=' + this.apiKey + '&q=';
+  private currentConditionAPI = 'https://dataservice.accuweather.com/currentconditions/v1/';
+  private fiveDaysAPI = 'https://dataservice.accuweather.com/forecasts/v1/daily/5day/';
+  private geolocationAPI = 'https://dataservice.accuweather.com/locations/v1/cities/geoposition/search?apikey=';
 
 
   constructor(private http: HttpClient) {

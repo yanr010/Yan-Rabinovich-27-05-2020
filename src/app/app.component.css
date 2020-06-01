@@ -71,5 +71,8 @@
 
 .forecast {
   border-color: var(--font-color);
+}
 
+.mat-input-element {
+  color: var(--font-color) !important;
 }
