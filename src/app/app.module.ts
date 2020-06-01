@@ -29,7 +29,6 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { MatSnackBarModule} from '@angular/material/snack-bar';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
